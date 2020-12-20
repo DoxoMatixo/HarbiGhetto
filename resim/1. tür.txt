@@ -1,0 +1,21 @@
+    }else if (command === 'hello') {
+        const exampleEmbed = new Discord.MessageEmbed()
+        .setColor('#1F4CF0')
+        .setTitle('Tıkla ve Yayına Git!')
+        .setURL('https://dlive.tv/dgknyilmaz')
+        .setAuthor('Yayın Başladı!', 'https://i.hizliresim.com/HdElr4.png')
+        .setDescription('Yayına katılarak bize ortak olabilirsin!')
+        .setThumbnail('https://i.hizliresim.com/W5eqH5.png')
+        .addFields(
+            { name: 'Regular field title', value: 'Some value here' },
+            { name: '\u200B', value: '\u200B' },
+            { name: 'Inline field title', value: 'Some value here', inline: true },
+            { name: 'Inline field title', value: 'Some value here', inline: true },
+        )
+        .addField('Inline field title', 'Some value here', true)
+        .setImage('https://i.hizliresim.com/bsVnkU.png')
+        .setTimestamp()
+        .setFooter('Harbi Bot tarafından oluşturuldu', 'https://i.hizliresim.com/lI9QmD.png');
+
+        message.channel.send(exampleEmbed);
+    }
